@@ -1,0 +1,26 @@
+{
+  "environment": "development PC; NOT Galaxy Book2",
+  "python": "3.12.8",
+  "model_async_blank_frame": [
+    {
+      "timestamp": 100,
+      "poses": 0
+    }
+  ],
+  "frames_per_mode": 120,
+  "input": "synthetic landmarks; no camera capture",
+  "modes": {
+    "bones": {
+      "composite_mean_ms": 23.317495833308993,
+      "composite_p95_ms": 28.7246049992973,
+      "composite_capacity_fps": 42.88625190066517,
+      "parts": 10
+    },
+    "muscles": {
+      "composite_mean_ms": 25.92746083334987,
+      "composite_p95_ms": 29.932550000467014,
+      "composite_capacity_fps": 38.56914514026472,
+      "parts": 10
+    }
+  }
+}

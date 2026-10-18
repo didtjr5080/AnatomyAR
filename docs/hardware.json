@@ -1,0 +1,32 @@
+﻿{
+    "collected_at":  "2026-10-18",
+    "cpu":  {
+                "Name":  "AMD Ryzen 3 3100 4-Core Processor              ",
+                "NumberOfCores":  4,
+                "NumberOfLogicalProcessors":  8
+            },
+    "computer":  {
+                     "Manufacturer":  "Micro-Star International Co., Ltd.",
+                     "Model":  "MS-7C51",
+                     "TotalPhysicalMemory":  34308272128
+                 },
+    "gpu":  {
+                "Name":  "NVIDIA GeForce GTX 1650",
+                "CurrentHorizontalResolution":  1440,
+                "CurrentVerticalResolution":  900
+            },
+    "cameras":  [
+                    {
+                        "Status":  "Unknown",
+                        "FriendlyName":  "    HCAM01L    "
+                    },
+                    {
+                        "Status":  "Unknown",
+                        "FriendlyName":  "ABKO APC930 QHD WEBCAM"
+                    },
+                    {
+                        "Status":  "OK",
+                        "FriendlyName":  "    HCAM01L    "
+                    }
+                ]
+}

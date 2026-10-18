@@ -1,0 +1,6 @@
+{"drops": 0, "status": "STARTING", "timestamp_ms": 5567921, "working_set_bytes": 115576832, "private_bytes": 394412032, "process_cpu_percent": 9.1796875}
+{"drops": 0, "status": "STARTING", "timestamp_ms": 5568921, "working_set_bytes": 258662400, "private_bytes": 551546880, "process_cpu_percent": 11.534202755909808}
+{"event": "error", "status": "CAMERA_ERROR", "message": "카메라 연결 실패: 권한·연결·다른 앱의 점유를 확인하고 재검색하세요"}
+{"drops": 0, "status": "CAMERA_ERROR", "timestamp_ms": 5569921, "working_set_bytes": 152969216, "private_bytes": 425443328, "process_cpu_percent": 1.7863948170724837}
+{"drops": 0, "status": "CAMERA_ERROR", "timestamp_ms": 5570921, "working_set_bytes": 153092096, "private_bytes": 425443328, "process_cpu_percent": 1.3671875}
+{"drops": 0, "status": "CAMERA_ERROR", "timestamp_ms": 5571921, "working_set_bytes": 153096192, "private_bytes": 425443328, "process_cpu_percent": 0.0}

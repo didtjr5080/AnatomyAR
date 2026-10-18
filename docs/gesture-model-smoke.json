@@ -1,0 +1,474 @@
+{
+  "source": "Google MediaPipe official example images; no webcam; images kept only in memory",
+  "samples": {
+    "victory": {
+      "categories": [
+        {
+          "gesture": "Victory",
+          "score": 0.9052212238311768
+        }
+      ],
+      "gesture_ms": 37.672699996619485,
+      "victory_hands": [
+        "right"
+      ]
+    },
+    "thumbs_up": {
+      "categories": [
+        {
+          "gesture": "Thumb_Up",
+          "score": 0.7323757410049438
+        }
+      ],
+      "gesture_ms": 50.34370000066701,
+      "victory_hands": []
+    },
+    "pointing_up": {
+      "categories": [
+        {
+          "gesture": "Pointing_Up",
+          "score": 0.8168480396270752
+        }
+      ],
+      "gesture_ms": 46.0120999996434,
+      "victory_hands": []
+    }
+  },
+  "pipeline": {
+    "frozen": true,
+    "elapsed_seconds": 4.172000000005937,
+    "resume_button_enabled": true,
+    "metrics": {
+      "throttled_count": 23,
+      "inference_count": 51,
+      "composite_count": 51,
+      "display_count": 51,
+      "throttled_fps": 7.053716766139264,
+      "inference_fps": 13.007284079093347,
+      "composite_fps": 13.007284079093347,
+      "display_fps": 13.116474291742033,
+      "gesture_ms_mean": 54.2240784316342,
+      "gesture_ms_p95": 71.72404999801074,
+      "inference_ms_mean": 23.568627450980394,
+      "inference_ms_p95": 32.0,
+      "composite_ms_mean": 0.5200823535572043,
+      "composite_ms_p95": 0.8153000017045997,
+      "latency_ms_mean": 127.09803921568627,
+      "latency_ms_p95": 172.0,
+      "age_ms_mean": 138.77659574468086,
+      "age_ms_p95": 172.0
+    },
+    "errors": [],
+    "observations": [
+      {
+        "elapsed": 0.547,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 141,
+        "number": null
+      },
+      {
+        "elapsed": 0.578,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": null
+      },
+      {
+        "elapsed": 0.609,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 93,
+        "number": null
+      },
+      {
+        "elapsed": 0.687,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": null
+      },
+      {
+        "elapsed": 0.75,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": null
+      },
+      {
+        "elapsed": 0.812,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 125,
+        "number": null
+      },
+      {
+        "elapsed": 0.891,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 110,
+        "number": null
+      },
+      {
+        "elapsed": 1.0,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 156,
+        "number": null
+      },
+      {
+        "elapsed": 1.062,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 171,
+        "number": null
+      },
+      {
+        "elapsed": 1.125,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 172,
+        "number": 3
+      },
+      {
+        "elapsed": 1.203,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 172,
+        "number": 3
+      },
+      {
+        "elapsed": 1.266,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 172,
+        "number": 3
+      },
+      {
+        "elapsed": 1.328,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 156,
+        "number": 3
+      },
+      {
+        "elapsed": 1.406,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 172,
+        "number": 3
+      },
+      {
+        "elapsed": 1.469,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 172,
+        "number": 3
+      },
+      {
+        "elapsed": 1.547,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 172,
+        "number": 3
+      },
+      {
+        "elapsed": 1.609,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 172,
+        "number": 3
+      },
+      {
+        "elapsed": 1.672,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 156,
+        "number": 3
+      },
+      {
+        "elapsed": 1.75,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 172,
+        "number": 3
+      },
+      {
+        "elapsed": 1.781,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 140,
+        "number": 3
+      },
+      {
+        "elapsed": 1.844,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 125,
+        "number": 3
+      },
+      {
+        "elapsed": 1.922,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 110,
+        "number": 3
+      },
+      {
+        "elapsed": 1.984,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": 3
+      },
+      {
+        "elapsed": 2.047,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 94,
+        "number": 3
+      },
+      {
+        "elapsed": 2.125,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": 3
+      },
+      {
+        "elapsed": 2.219,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 141,
+        "number": 2
+      },
+      {
+        "elapsed": 2.281,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 94,
+        "number": 2
+      },
+      {
+        "elapsed": 2.359,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": 2
+      },
+      {
+        "elapsed": 2.453,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 141,
+        "number": 2
+      },
+      {
+        "elapsed": 2.5,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 141,
+        "number": 2
+      },
+      {
+        "elapsed": 2.562,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 140,
+        "number": 2
+      },
+      {
+        "elapsed": 2.625,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 94,
+        "number": 2
+      },
+      {
+        "elapsed": 2.703,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": 2
+      },
+      {
+        "elapsed": 2.766,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 94,
+        "number": 2
+      },
+      {
+        "elapsed": 2.828,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 94,
+        "number": 2
+      },
+      {
+        "elapsed": 2.906,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": 2
+      },
+      {
+        "elapsed": 3.0,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 125,
+        "number": 2
+      },
+      {
+        "elapsed": 3.062,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 93,
+        "number": 2
+      },
+      {
+        "elapsed": 3.141,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 110,
+        "number": 1
+      },
+      {
+        "elapsed": 3.203,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 94,
+        "number": 1
+      },
+      {
+        "elapsed": 3.312,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 140,
+        "number": 1
+      },
+      {
+        "elapsed": 3.422,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 141,
+        "number": 1
+      },
+      {
+        "elapsed": 3.484,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": 1
+      },
+      {
+        "elapsed": 3.578,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 125,
+        "number": 1
+      },
+      {
+        "elapsed": 3.656,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": 1
+      },
+      {
+        "elapsed": 3.719,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 94,
+        "number": 1
+      },
+      {
+        "elapsed": 3.781,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 94,
+        "number": 1
+      },
+      {
+        "elapsed": 3.891,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 141,
+        "number": 1
+      },
+      {
+        "elapsed": 4.0,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 141,
+        "number": 1
+      },
+      {
+        "elapsed": 4.062,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 109,
+        "number": 1
+      },
+      {
+        "elapsed": 4.125,
+        "hands": [
+          "right"
+        ],
+        "age_ms": 125,
+        "number": null
+      }
+    ],
+    "resumed": true
+  }
+}

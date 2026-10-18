@@ -1,0 +1,1285 @@
+{
+  "schema_version": 1,
+  "alpha": "straight",
+  "asset_set": "educational-v1",
+  "assets": [
+    {
+      "id": "bones/head",
+      "path": "bones/head.png",
+      "part": "head",
+      "mode": "bones",
+      "size": [
+        262,
+        374
+      ],
+      "source_rect": [
+        22,
+        57,
+        262,
+        374
+      ],
+      "joints": [
+        0,
+        2,
+        5,
+        7,
+        8,
+        11,
+        12
+      ],
+      "side": "center",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 262,
+      "reference_length": 329.12,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/torso",
+      "path": "bones/torso.png",
+      "part": "torso",
+      "mode": "bones",
+      "size": [
+        265,
+        467
+      ],
+      "source_rect": [
+        306,
+        7,
+        265,
+        467
+      ],
+      "joints": [
+        12,
+        11,
+        23,
+        24
+      ],
+      "side": "center",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 265,
+      "reference_length": 410.96,
+      "z_order": 0,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/upper_arm",
+      "path": "bones/upper_arm.png",
+      "part": "upper_arm",
+      "mode": "bones",
+      "size": [
+        108,
+        451
+      ],
+      "source_rect": [
+        639,
+        13,
+        108,
+        451
+      ],
+      "joints": [
+        12,
+        14
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 108,
+      "reference_length": 396.88,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/forearm",
+      "path": "bones/forearm.png",
+      "part": "forearm",
+      "mode": "bones",
+      "size": [
+        100,
+        451
+      ],
+      "source_rect": [
+        879,
+        25,
+        100,
+        451
+      ],
+      "joints": [
+        14,
+        16
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 100,
+      "reference_length": 396.88,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/thigh",
+      "path": "bones/thigh.png",
+      "part": "thigh",
+      "mode": "bones",
+      "size": [
+        118,
+        453
+      ],
+      "source_rect": [
+        1109,
+        13,
+        118,
+        453
+      ],
+      "joints": [
+        24,
+        26
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 118,
+      "reference_length": 398.64,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/shin",
+      "path": "bones/shin.png",
+      "part": "shin",
+      "mode": "bones",
+      "size": [
+        120,
+        457
+      ],
+      "source_rect": [
+        1357,
+        13,
+        120,
+        457
+      ],
+      "joints": [
+        26,
+        28
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 120,
+      "reference_length": 402.16,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/head",
+      "path": "muscles/head.png",
+      "part": "head",
+      "mode": "muscles",
+      "size": [
+        274,
+        504
+      ],
+      "source_rect": [
+        14,
+        488,
+        274,
+        504
+      ],
+      "joints": [
+        0,
+        2,
+        5,
+        7,
+        8,
+        11,
+        12
+      ],
+      "side": "center",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 274,
+      "reference_length": 443.52,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/torso",
+      "path": "muscles/torso.png",
+      "part": "torso",
+      "mode": "muscles",
+      "size": [
+        322,
+        516
+      ],
+      "source_rect": [
+        288,
+        488,
+        322,
+        516
+      ],
+      "joints": [
+        12,
+        11,
+        23,
+        24
+      ],
+      "side": "center",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 322,
+      "reference_length": 454.08,
+      "z_order": 0,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/upper_arm",
+      "path": "muscles/upper_arm.png",
+      "part": "upper_arm",
+      "mode": "muscles",
+      "size": [
+        181,
+        502
+      ],
+      "source_rect": [
+        627,
+        491,
+        181,
+        502
+      ],
+      "joints": [
+        12,
+        14
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 181,
+      "reference_length": 441.76,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/forearm",
+      "path": "muscles/forearm.png",
+      "part": "forearm",
+      "mode": "muscles",
+      "size": [
+        151,
+        505
+      ],
+      "source_rect": [
+        864,
+        496,
+        151,
+        505
+      ],
+      "joints": [
+        14,
+        16
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 151,
+      "reference_length": 444.4,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/thigh",
+      "path": "muscles/thigh.png",
+      "part": "thigh",
+      "mode": "muscles",
+      "size": [
+        162,
+        508
+      ],
+      "source_rect": [
+        1090,
+        489,
+        162,
+        508
+      ],
+      "joints": [
+        24,
+        26
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 162,
+      "reference_length": 447.04,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/shin",
+      "path": "muscles/shin.png",
+      "part": "shin",
+      "mode": "muscles",
+      "size": [
+        140,
+        498
+      ],
+      "source_rect": [
+        1342,
+        493,
+        140,
+        498
+      ],
+      "joints": [
+        26,
+        28
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 140,
+      "reference_length": 438.24,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/upper_arm_left",
+      "path": "bones/upper_arm_left.png",
+      "part": "upper_arm",
+      "mode": "bones",
+      "size": [
+        125,
+        478
+      ],
+      "source_rect": null,
+      "joints": [
+        11,
+        13
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 125,
+      "reference_length": 420.64,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/forearm_left",
+      "path": "bones/forearm_left.png",
+      "part": "forearm",
+      "mode": "bones",
+      "size": [
+        112,
+        478
+      ],
+      "source_rect": null,
+      "joints": [
+        13,
+        15
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 112,
+      "reference_length": 420.64,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/thigh_left",
+      "path": "bones/thigh_left.png",
+      "part": "thigh",
+      "mode": "bones",
+      "size": [
+        166,
+        477
+      ],
+      "source_rect": null,
+      "joints": [
+        23,
+        25
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 166,
+      "reference_length": 419.76,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "bones/shin_left",
+      "path": "bones/shin_left.png",
+      "part": "shin",
+      "mode": "bones",
+      "size": [
+        142,
+        471
+      ],
+      "source_rect": null,
+      "joints": [
+        25,
+        27
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 142,
+      "reference_length": 414.48,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/upper_arm_left",
+      "path": "muscles/upper_arm_left.png",
+      "part": "upper_arm",
+      "mode": "muscles",
+      "size": [
+        195,
+        513
+      ],
+      "source_rect": null,
+      "joints": [
+        11,
+        13
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 195,
+      "reference_length": 451.44,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/forearm_left",
+      "path": "muscles/forearm_left.png",
+      "part": "forearm",
+      "mode": "muscles",
+      "size": [
+        166,
+        510
+      ],
+      "source_rect": null,
+      "joints": [
+        13,
+        15
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 166,
+      "reference_length": 448.8,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/thigh_left",
+      "path": "muscles/thigh_left.png",
+      "part": "thigh",
+      "mode": "muscles",
+      "size": [
+        197,
+        513
+      ],
+      "source_rect": null,
+      "joints": [
+        23,
+        25
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 197,
+      "reference_length": 451.44,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/shin_left",
+      "path": "muscles/shin_left.png",
+      "part": "shin",
+      "mode": "muscles",
+      "size": [
+        151,
+        510
+      ],
+      "source_rect": null,
+      "joints": [
+        25,
+        27
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 151,
+      "reference_length": 448.8,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending"
+    },
+    {
+      "id": "muscles/upper_arm_flex",
+      "path": "muscles/upper_arm_flex.png",
+      "part": "upper_arm",
+      "mode": "muscles",
+      "size": [
+        240,
+        521
+      ],
+      "source_rect": null,
+      "joints": [
+        12,
+        14
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 240,
+      "reference_length": 458.48,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending",
+      "variant": "flexed"
+    },
+    {
+      "id": "muscles/upper_arm_left_flex",
+      "path": "muscles/upper_arm_left_flex.png",
+      "part": "upper_arm",
+      "mode": "muscles",
+      "size": [
+        240,
+        521
+      ],
+      "source_rect": null,
+      "joints": [
+        11,
+        13
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 240,
+      "reference_length": 458.48,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending",
+      "variant": "flexed"
+    },
+    {
+      "id": "muscles/thigh_flex",
+      "path": "muscles/thigh_flex.png",
+      "part": "thigh",
+      "mode": "muscles",
+      "size": [
+        276,
+        592
+      ],
+      "source_rect": null,
+      "joints": [
+        24,
+        26
+      ],
+      "side": "right",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 276,
+      "reference_length": 520.96,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending",
+      "variant": "flexed"
+    },
+    {
+      "id": "muscles/thigh_left_flex",
+      "path": "muscles/thigh_left_flex.png",
+      "part": "thigh",
+      "mode": "muscles",
+      "size": [
+        278,
+        592
+      ],
+      "source_rect": null,
+      "joints": [
+        23,
+        25
+      ],
+      "side": "left",
+      "view": "anterior",
+      "anchors": [
+        [
+          0.5,
+          0.06
+        ],
+        [
+          0.5,
+          0.94
+        ]
+      ],
+      "torso_anchors": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.88,
+          0.2
+        ],
+        [
+          0.76,
+          0.84
+        ],
+        [
+          0.24,
+          0.84
+        ]
+      ],
+      "reference_width": 278,
+      "reference_length": 520.96,
+      "z_order": 1,
+      "confidence": 0.6,
+      "quality_status": "generated; field/anatomical review pending",
+      "variant": "flexed"
+    }
+  ]
+}

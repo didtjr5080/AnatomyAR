@@ -1,0 +1,23 @@
+{
+  "environment": "development PC; NOT Galaxy Book2",
+  "input": "synthetic landmarks; no camera capture",
+  "frames_per_case": 30,
+  "cases": {
+    "full-muscles": {
+      "mean_ms": 28.633976666727296,
+      "p95_ms": 32.891415001722635
+    },
+    "full-bones": {
+      "mean_ms": 27.465433332812,
+      "p95_ms": 32.12995000030787
+    },
+    "closeup-muscles": {
+      "mean_ms": 66.31738333295895,
+      "p95_ms": 71.44503999916196
+    },
+    "closeup-bones": {
+      "mean_ms": 68.6486566667251,
+      "p95_ms": 89.77352500114645
+    }
+  }
+}

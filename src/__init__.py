@@ -1,0 +1,1 @@
+"""Local educational anatomy visualization."""

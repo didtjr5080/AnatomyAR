@@ -1,0 +1,19 @@
+name: Windows install and test
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Python, dependencies, verify models and run tests
+        shell: cmd
+        run: .\setup_windows.bat
+      - name: Launch application without a camera
+        shell: cmd
+        run: .\run_windows.bat --no-start --quit-after 2
