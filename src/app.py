@@ -191,7 +191,7 @@ class Controller(QObject):
             self.photo_packet=None
             view.countdown=None
             view.update()
-        if view.pose_timestamp is not None and (settings.standby or now-view.pose_timestamp>settings.max_age_ms):
+        if view.pose_received is not None and (settings.standby or now-view.pose_received>settings.max_age_ms):
             view.clear_hands()
         current = self.current
         if current and now-current.frame.timestamp_ms<=settings.max_age_ms and current.version==version:
@@ -213,7 +213,8 @@ class Controller(QObject):
                                 and (0<=now-previous.frame.timestamp_ms<=500
                                      or self.countdown.started is not None and self.photo_packet is previous))
                 if keep_composite:
-                    view.clear_hands()
+                    view.present(view.image,view.labels,current.pose.landmarks,current.message,current.pose.timestamp_ms,
+                                 interactive=not hands and self.countdown.started is None)
                 else:
                     view.present(image,current.labels,current.pose.landmarks,current.message,current.pose.timestamp_ms,
                                  interactive=not hands and self.countdown.started is None)

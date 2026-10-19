@@ -32,13 +32,13 @@ def main():
     for mode in ("muscles","bones"):
         state.update(mode=mode)
         rgb,labels,_,_=compositor.render(backdrop(),synthetic_pose(),state.snapshot()[0])
-        view.present(owned_image(rgb),labels,message="가상 좌표 검증 화면 · 카메라 영상 아님")
+        view.present(owned_image(rgb),labels,points=synthetic_pose(),message="가상 좌표 검증 화면 · 카메라 영상 아님")
         app.processEvents()
         assert controller.control.grab().save(str(folder/f"unified-{mode}.png"))
     state.update(mode="muscles")
     rgb,labels,_,_=compositor.render(backdrop(),synthetic_pose(),state.snapshot()[0])
     image=owned_image(rgb)
-    view.present(image)
+    view.present(image,points=synthetic_pose())
     w,h,scale,ox,oy=view.image_geometry()
     center=view.mode_rects()["bones"].center()
     points=synthetic_pose()
@@ -56,7 +56,7 @@ def main():
     finally:
         exhibition_window.now_ms=old_clock
     rgb,labels,_,_=compositor.render(backdrop(),synthetic_pose(),state.snapshot()[0])
-    view.present(owned_image(rgb),labels,message="가상 좌표 검증 화면 · 카메라 영상 아님")
+    view.present(owned_image(rgb),labels,points=synthetic_pose(),message="가상 좌표 검증 화면 · 카메라 영상 아님")
     controller.control.settings_dock.show()
     app.processEvents()
     assert controller.control.grab().save(str(folder/"unified-settings.png"))
@@ -70,7 +70,7 @@ def main():
     for mode in ("muscles","bones"):
         state.update(mode=mode)
         rgb,labels,_,_=compositor.render(bg,points,state.snapshot()[0])
-        view.present(owned_image(rgb),labels,message="상체 체험 · 얼굴 보존 / 아래쪽 페이드 · 가상 좌표")
+        view.present(owned_image(rgb),labels,points=points,message="상체 체험 · 얼굴 보존 / 아래쪽 페이드 · 가상 좌표")
         app.processEvents()
         assert controller.control.grab().save(str(folder/f"closeup-{mode}.png"))
     points=synthetic_pose()
@@ -79,10 +79,16 @@ def main():
     for mode in ("muscles","bones"):
         state.update(mode=mode)
         rgb,labels,_,_=compositor.render(backdrop(),points,state.snapshot()[0])
-        view.present(owned_image(rgb),labels,message="양팔 교차 · 팔 표시 유지 · 가상 좌표")
+        view.present(owned_image(rgb),labels,points=points,message="양팔 교차 · 팔 표시 유지 · 가상 좌표")
         app.processEvents()
         assert controller.control.grab().save(str(folder/f"crossed-arms-{mode}.png"))
     state.update(mode="muscles")
+    points=synthetic_pose()
+    points[:,:2]=(points[:,:2]-[640,240])*.35+[640,240]
+    rgb,labels,_,_=compositor.render(backdrop(),points,state.snapshot()[0])
+    view.present(owned_image(rgb),labels,points=points)
+    app.processEvents()
+    assert controller.control.grab().save(str(folder/"distant-selection.png"))
     bg=backdrop()
     points=synthetic_pose()
     rgb,labels,_,_=compositor.render(bg,points,state.snapshot()[0])

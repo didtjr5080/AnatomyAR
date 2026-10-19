@@ -4,6 +4,7 @@ from PySide6.QtWidgets import QWidget
 from ..rendering.coordinates import display_transform,mirror_x
 from ..core.packets import now_ms
 from .hand_selector import DwellSelector,palm_points
+from ..rendering.anatomy_mapper import valid
 
 def owned_image(rgb):
     h,w = rgb.shape[:2]
@@ -39,6 +40,7 @@ class VideoView(QWidget):
         self.selector=DwellSelector()
         self.hand_cursors=[]
         self.pose_timestamp=None
+        self.pose_received=None
         self.interaction_geometry=None
         self.frozen=False
         self.frozen_settings=None
@@ -81,6 +83,22 @@ class VideoView(QWidget):
         if geometry:
             w,h,scale,ox,oy=geometry
             area=area.intersected(QRectF(ox,oy,w*scale,h*scale))
+            s=self.frozen_settings or self.state.snapshot()[0]
+            if area.width()>=224 and self.points is not None and valid(self.points,(11,12),w,h,s.confidence):
+                shoulders=self.points[[11,12],:2]
+                center=shoulders.mean(axis=0)
+                span=float(((shoulders[0]-shoulders[1])**2).sum()**.5)*scale
+                if span>=20:
+                    margin=8
+                    bw=min(210,max(96,span*.8))
+                    bw=min(bw,(area.width()-3*margin)/2)
+                    bh=max(65,min(110,bw*.55))
+                    offset=min(max(span*.95,bw*.65+8),(area.width()-bw)/2-margin)
+                    cx=(mirror_x(center[0],w) if s.mirror else center[0])*scale+ox
+                    cx=min(max(cx,area.left()+margin+bw/2+offset),area.right()-margin-bw/2-offset)
+                    cy=min(max(center[1]*scale+oy-span*.3,area.top()+bh/2+8),area.bottom()-bh/2-8)
+                    return {"muscles":QRectF(cx-offset-bw/2,cy-bh/2,bw,bh),
+                            "bones":QRectF(cx+offset-bw/2,cy-bh/2,bw,bh)}
         bw=max(96,min(210,area.width()*.22))
         bh=max(65,min(110,area.height()*.22))
         margin=max(8,area.width()*.035)
@@ -92,6 +110,7 @@ class VideoView(QWidget):
         self.selector.reset()
         self.hand_cursors=[]
         self.pose_timestamp=None
+        self.pose_received=None
         self.update()
 
     def update_hands(self,now):
@@ -107,6 +126,8 @@ class VideoView(QWidget):
             self.clear_hands()
             return
         w,h,scale,ox,oy=geometry
+        if self.pose_timestamp!=self.selector.last:
+            self.pose_received=now
         cursors=[]
         hits=[]
         rectangles=self.mode_rects()
@@ -116,7 +137,7 @@ class VideoView(QWidget):
             for mode,rect in rectangles.items():
                 if rect.contains(pos): hits.append((hand,mode))
         self.hand_cursors=cursors
-        chosen=self.selector.update(hits,self.pose_timestamp,now,s.max_age_ms,s.mode)
+        chosen=self.selector.update(hits,self.pose_timestamp,now,s.max_age_ms,s.mode,tracking_lost=not cursors)
         if chosen: self.state.update(mode=chosen)
         self.update()
 

@@ -27,10 +27,11 @@ class DwellSelector:
         self.target=None
         self.since=None
         self.last=None
+        self.last_hit=None
         self.progress=0.0
         self.latched=False
 
-    def update(self, hits, timestamp, now, max_age, selected):
+    def update(self, hits, timestamp, now, max_age, selected, tracking_lost=False):
         if timestamp is None or not 0<=now-timestamp<=max_age:
             self.reset()
             return None
@@ -40,7 +41,10 @@ class DwellSelector:
             self.reset()
         self.last=timestamp
         if not hits:
+            if tracking_lost and self.last_hit is not None and timestamp-self.last_hit<=150:
+                return None
             self.target=self.since=None
+            self.last_hit=None
             self.progress=0.0
             self.latched=False
             return None
@@ -53,6 +57,7 @@ class DwellSelector:
         target=self.target if self.target in hits else sorted(hits)[0]
         if target!=self.target:
             self.target,self.since=target,timestamp
+        self.last_hit=timestamp
         self.progress=min(1.0,(timestamp-self.since)/self.dwell_ms)
         if self.progress>=1:
             self.latched=True

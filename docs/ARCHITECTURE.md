@@ -107,3 +107,7 @@ FPS는 최근 2초 구간, 평균/p95는 최근 600개 단계 샘플입니다. �
 [모델 개요](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker),
 [Gesture Recognizer Python](https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer/python),
 [QScreen](https://doc.qt.io/qtforpython-6/PySide6/QtGui/QScreen.html).
+
+## 거리별 모드 선택
+
+유효한 양쪽 어깨를 기준으로 버튼 위치와 간격을 계산하고 표시 영역 안으로 제한합니다. 어깨가 없으면 기존 가장자리 배치를 사용합니다. 좌우 반전과 fit/fill 좌표 변환을 손 커서와 공유합니다. 선택은 실제 최신 손 좌표만 사용하며 추론 결과의 수신 시각으로 대기 중 만료를 판단합니다. 입력 자체의 200ms 유효성 검사는 유지합니다. 손 인식 누락은 최대 150ms 동안 선택 진행만 유지하고, 손이 버튼 밖으로 이동하면 즉시 취소합니다. 합성 화면 유지 중에도 새 입력으로 선택할 수 있습니다.
